@@ -1,13 +1,13 @@
-black==21.4b2
-torch==1.9.0
-torchvision==0.10.0
+black
+torch
+torchvision
 opencv-python-headless
-streamlit==0.70.0
-Pillow==8.0.1
+streamlit
+Pillow
 numpy
 matplotlib
 plotly
 gdown
 
--f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.9/index.html
+-f  https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
 detectron2
