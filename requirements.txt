@@ -1,3 +1,5 @@
+-f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html
+detectron2
 opencv-python-headless
 streamlit
 Pillow
@@ -8,5 +10,4 @@ matplotlib
 plotly
 gdown
 #git+https://github.com/facebookresearch/detectron2.git #detectron2
--f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html
-detectron2
+
