@@ -9,7 +9,7 @@ from detectron2.data import MetadataCatalog, DatasetCatalog
 
 CLASSES = [0, 4]
 
-url = 'https://drive.google.com/uc?id=1-p1fjNoIEsnFTRkveB0kuxqV6ynSFM6P/view?usp=sharing'
+url = 'https://drive.google.com/uc?id=1-p1fjNoIEsnFTRkveB0kuxqV6ynSFM6P'
 output = 'model_final.pth'
 gdown.download(url, output, quiet=False)
 def load_cfg():
