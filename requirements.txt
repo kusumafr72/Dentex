@@ -7,3 +7,4 @@ torchvision
 matplotlib
 plotly
 gdown
+git+https://github.com/facebookresearch/detectron2.git
