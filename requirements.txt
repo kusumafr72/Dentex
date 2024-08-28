@@ -1,7 +1,6 @@
 streamlit
 Pillow
 numpy
-distutils
 torch
 torchvision
 opencv-python
