@@ -1,13 +1,16 @@
 import cv2
 import numpy as np
 import streamlit as st
-
+import gdown
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
 from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
 
+url = 'https://drive.google.com/uc?id=YOUR_MODEL_FILE_ID'
+output = 'model_final.pth'
+gdown.download(url, output, quiet=False)
 
 @st.cache(persist=True)
 def initialization():
@@ -27,7 +30,7 @@ def initialization():
     # Set threshold for this model
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  
     # Find a model from detectron2's model zoo. You can use the https://dl.fbaipublicfiles... url as well
-    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")
+    cfg.MODEL.WEIGHTS = output
     # Initialize prediction model
     predictor = DefaultPredictor(cfg)
 
