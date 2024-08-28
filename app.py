@@ -44,7 +44,7 @@ def inference(predictor, img):
 
 @st.cache
 def output_image(cfg, img, outputs):
-    v = Visualizer(img[:, :, ::-1], MetadataCatalog.get(cfg.DATASETS.TRAIN[0]), scale=1.2)
+    v = Visualizer(img[:, :, ::-1], MetadataCatalog.get(dentex_test), scale=1.2)
     out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
     processed_img = out.get_image()
 
