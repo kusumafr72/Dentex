@@ -8,7 +8,7 @@ from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
 
-url = 'https://drive.google.com/uc?id=YOUR_MODEL_FILE_ID'
+url = 'https://drive.google.com/file/d/1-p1fjNoIEsnFTRkveB0kuxqV6ynSFM6P/view?usp=sharing'
 output = 'model_final.pth'
 gdown.download(url, output, quiet=False)
 
