@@ -31,7 +31,7 @@ def inference(predictor, img):
 
 def visualize_output(cfg, img, outputs):
     # We can use `Visualizer` to draw the predictions on the image.
-    v = Visualizer(img[:, :, ::-1], MetadataCatalog.get(cfg.DATASETS.TRAIN[0]), scale=1.2)
+    v = Visualizer(img[:, :, ::-1], MetadataCatalog.get('dentex_test'), scale=1.2)
     out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
     cv2.imshow('kk', out.get_image()[:, :, ::-1])
     cv2.waitKey(0)
