@@ -1,5 +1,3 @@
-!git clone https://github.com/facebookresearch/detectron2 detectron2_repo
-!pip install-e detectron2_repo
 import cv2
 import numpy as np
 import streamlit as st
