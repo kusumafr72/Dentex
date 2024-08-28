@@ -48,6 +48,7 @@ MarkupSafe==1.1.1
 matplotlib==3.3.2
 mistune==0.8.4
 mock==4.0.2
+git+https://github.com/facebookresearch/detectron2.git
 nbclient==0.5.1
 nbconvert==6.0.7
 nbformat==5.0.8
@@ -100,8 +101,8 @@ terminado==0.9.1
 testpath==0.4.4
 toml==0.10.2
 toolz==0.11.1
-torch
-torchvision
+torch==2.0.0
+torchvision==0.15.1
 tornado==6.1
 tqdm==4.51.0
 traitlets==4.3.3
@@ -115,4 +116,4 @@ Werkzeug==1.0.1
 widgetsnbextension==3.5.1
 yacs==0.1.8
 zipp==3.4.0
-git+https://github.com/facebookresearch/detectron2.git #detectron2
+
