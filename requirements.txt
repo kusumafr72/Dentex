@@ -1,3 +1,4 @@
+git+https://github.com/facebookresearch/detectron2.git
 streamlit
 Pillow
 numpy
@@ -6,4 +7,3 @@ torchvision
 opencv-python
 matplotlib
 plotly
-git+https://github.com/facebookresearch/detectron2.git
