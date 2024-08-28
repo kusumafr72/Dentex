@@ -167,7 +167,6 @@ MODEL:
     CLS_AGNOSTIC_BBOX_REG: false
     CONV_DIM: 256
     FC_DIM: 1024
-    FED_LOSS_NUM_CLASSES: 50
     NAME: FastRCNNConvFCHead
     NORM: ''
     NUM_CONV: 0
