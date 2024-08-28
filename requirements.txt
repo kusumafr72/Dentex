@@ -1,10 +1,10 @@
-streamlit==1.23.1
-Pillow==9.5.0
+streamlit
+Pillow
 numpy
 distutils
-torch==2.2.0
-torchvision==0.15.1
-opencv-python==4.6.0.66
-matplotlib==3.5.3
-plotly==5.15.0
+torch
+torchvision
+opencv-python
+matplotlib
+plotly
 detectron2 -f \https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html
