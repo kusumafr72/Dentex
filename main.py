@@ -7,7 +7,7 @@ from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
 
-CLASSES = [0, 4]
+CLASSES = ['Caries','Deep Caries' ]
 
 url = 'https://drive.google.com/uc?id=1-p1fjNoIEsnFTRkveB0kuxqV6ynSFM6P'
 output = 'model_final.pth'
@@ -51,10 +51,10 @@ def discriminate(outputs):
 
 
 def main():
-    #img = cv2.imread('img.png')
-    img = cv2.imread('dog.jpg')
-    # cv2.imshow('kk', img)
-    # cv2.waitKey(0)
+    img = cv2.imread('img.png')
+    #img = cv2.imread('dog.jpg')
+    cv2.imshow('kk', img)
+    cv2.waitKey(0)
     cfg = load_cfg()
     predictor = DefaultPredictor(cfg)
     outputs = inference(predictor, img)
