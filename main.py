@@ -9,7 +9,9 @@ from detectron2.data import MetadataCatalog, DatasetCatalog
 
 CLASSES = [0, 4]
 
-
+url = 'https://drive.google.com/uc?id=1-p1fjNoIEsnFTRkveB0kuxqV6ynSFM6P/view?usp=sharing'
+output = 'model_final.pth'
+gdown.download(url, output, quiet=False)
 def load_cfg():
     cfg = get_cfg()
     # Force model to operate within CPU, erase if CUDA compatible devices ara available
@@ -18,7 +20,7 @@ def load_cfg():
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  # set threshold for this model
     # Find a model from detectron2's model zoo. You can use the https://dl.fbaipublicfiles... url as well
-    cfg.MODEL.WEIGHTS = "version_3\model_final.pth"
+    cfg.MODEL.WEIGHTS = output
     
     return cfg
 
