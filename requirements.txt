@@ -60,7 +60,6 @@ packaging
 pandas
 pandocfilters
 parso
-pathtools
 pexpect
 pickleshare
 Pillow
