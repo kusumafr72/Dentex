@@ -1,5 +1,5 @@
 black==21.4b2
-torch
+torch==2.0.0
 torchvision
 opencv-python-headless
 streamlit
