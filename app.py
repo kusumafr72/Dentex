@@ -98,7 +98,7 @@ def main():
     cfg, predictor = initialization()
 
     # Streamlit initialization
-    st.title("Instance Segmentation")
+    st.title("Teeth Disease Detection")
 
     # Retrieve image
     uploaded_img = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
